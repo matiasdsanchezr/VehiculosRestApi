@@ -1,7 +1,11 @@
 const supertest = require('supertest');
 
 const testValues = require('./vehiculosTestValues');
+
 const utils = require('./utils');
+
+const { vehiculosDePrueba } = testValues;
+const { vehiculosErroneos } = testValues;
 
 let api;
 
@@ -12,20 +16,11 @@ async function init() {
 
 beforeAll(async () => {
   await init();
-  await utils.reiniciarDatabase();
 });
 
 afterAll(async () => {
   await utils.desconectarApp();
 });
-
-// beforeEach(async () => {
-//   await utils.reiniciarDatabase();
-//   await utils.agregarVehiculos();
-// });
-
-const { vehiculosDePrueba } = testValues;
-const { vehiculosErroneos } = testValues;
 
 describe('GET /vehiculos', () => {
   beforeAll(async () => {
