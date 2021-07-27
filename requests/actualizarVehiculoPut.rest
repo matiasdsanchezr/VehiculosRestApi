@@ -1,0 +1,11 @@
+PUT http://localhost:3000/vehiculos/ HTTP/1.1
+content-type: application/json
+
+{
+  "id" : "60ff9405b209979974f67953",
+  "nombre": "Camaro",
+  "marca": "Chevrolet",
+  "anio": "2000",
+  "descripcion": "Vehiculo de alta gama. Nuevo.",
+  "vendido": "true"
+}

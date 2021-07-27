@@ -1,0 +1,2 @@
+GET http://localhost:3000/vehiculos/60fa9b95644ff830a2e21c70 HTTP/1.1
+content-type: application/json

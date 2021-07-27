@@ -1,0 +1,11 @@
+POST http://localhost:3000/vehiculos HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "60ff90cc094ac29747f3cf58",
+  "nombre": "Focus",
+  "marca": "Ford",
+  "anio": "2010",
+  "descripcion": "Auto en malas condiciones",
+  "vendido": 1
+}
